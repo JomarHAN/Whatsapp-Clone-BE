@@ -9,15 +9,15 @@ import Pusher from 'pusher'
 const app = express()
 const port = process.env.PORT || 9000
 const pusher = new Pusher({
-    appId: "PUSHER_API_ID",
-    key: "PUSHER_KEY",
-    secret: "PUSHER_SECRET",
+    appId: "1098099",
+    key: "cc2254540daa48af75e4",
+    secret: "ec61d6d6c49945fd4dfc",
     cluster: "us2",
     useTLS: true
 });
 
 //DB config
-const connection_url = 'mongodb+srv://admin:<Password>@cluster0.ynbkd.mongodb.net/whatsappDB?retryWrites=true&w=majority'
+const connection_url = 'mongodb+srv://admin:OLcOz47PZrmixrG7@cluster0.ynbkd.mongodb.net/whatsappDB?retryWrites=true&w=majority'
 mongoose.connect(connection_url, {
     useCreateIndex: true,
     useNewUrlParser: true,
